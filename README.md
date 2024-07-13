@@ -49,8 +49,10 @@ cd CDFSOD-benchmark
 
 
 weights:
-download weights from [devit](https://github.com/mlzxy/devit/blob/main/Downloads.md)
-
+download pretrained model from [devit](https://github.com/mlzxy/devit/blob/main/Downloads.md)
+```
+bash main_results.sh
+```
 
 ## 3.3 Run DE-ViT-FT
 
