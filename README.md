@@ -22,7 +22,8 @@
 
 
 # 2 Datasets
-We take **COCO** as source training data and **ArTaxOr**, **Clipart1k**, **DIOR**, **DeepFish**, **NEU-DET**, and **UODD** as target datasets. 
+We take **COCO** as source training data and **ArTaxOr**, **Clipart1k**, **DIOR**, **DeepFish**, **NEU-DET**, and **UODD** as targets. 
+
 <img width="670" alt="image" src="https://github.com/user-attachments/assets/a56cb01e-fb06-4528-b63d-a373240572da">
 
 Also, as stated in the paper, we adopt the "pretrain, finetuning, and testing" pipeline, while the pre-trained stage on COCO is directly taken from the [DE-ViT](https://github.com/mlzxy/devit), thus in practice, only the targets are needed to run our experiments.  
