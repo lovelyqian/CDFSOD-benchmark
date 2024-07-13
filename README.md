@@ -5,9 +5,10 @@
 
 - [**News!**] 24-07-12: We build our [Project Page](http://yuqianfu.com/CDFSOD-benchmark) which includes a brief summary of our work.
 
-- [**News!**] 24-07-13: We released the [datasets]() and also [codes](https://github.com/lovelyqian/CDFSOD-benchmark). Welcome to use this benchmark and also try our proposed method!
+- [**News!**] 24-07-13: We released the [Datasets]() and also [Codes](https://github.com/lovelyqian/CDFSOD-benchmark). Welcome to use this benchmark and also try our proposed method!
 
-<img width="470" alt="image" src="http://yuqianfu.com/images/cdfsod-benchmark.jpg">
+
+![image](https://github.com/user-attachments/assets/532dc8db-47eb-4e84-be46-7a59f8ff0461)
 
 **In this paper**, we: 
 1) reorganize a **benchmark** for Cross-Domain Few-Shot Object Detection (CD-FSOD);
@@ -22,11 +23,11 @@
 
 # 2 Datasets
 We take **COCO** as source training data and **ArTaxOr**, **Clipart1k**, **DIOR**, **DeepFish**, **NEU-DET**, and **UODD** as target datasets. 
-![image](https://github.com/user-attachments/assets/a56cb01e-fb06-4528-b63d-a373240572da)
+<img width="670" alt="image" src="https://github.com/user-attachments/assets/a56cb01e-fb06-4528-b63d-a373240572da">
 
 Also, as stated in the paper, we adopt the "pretrain, finetuning, and testing" pipeline, while the pre-trained stage on COCO is directly taken from the [DE-ViT](https://github.com/mlzxy/devit), thus in practice, only the targets are needed to run our experiments.  
 
-The target datasets could be easily downloaded in the following links:  (If you use the datasets, please cite the corresponding papers properly, thanks.)
+The target datasets could be easily downloaded in the following links:  (If you use the datasets, please cite them properly, thanks.)
 
 - [Dataset Link from 百度云盘](https://pan.baidu.com/s/1MpTwmJQF6GtmnxauVUPNAw?pwd=ni5j)
 - [Dataset Link from Google Drive （coming soon）]()
@@ -46,17 +47,22 @@ cd CDFSOD-benchmark
 ```
 
 ## 3.2 Run CD-ViTO
-
-
-weights:
+1. download weights:
 download pretrained model from [devit](https://github.com/mlzxy/devit/blob/main/Downloads.md)
+
+2. run script: 
 ```
 bash main_results.sh
 ```
 
+
 ## 3.3 Run DE-ViT-FT
 
-# 4 Citiing
+# 4 Acknowledgement
+
+Our work is built upon [DE-ViT](https://github.com/mlzxy/devit), and also we use the codes of [ViTDeT](https://github.com/ViTAE-Transformer/ViTDet), [Detic](https://github.com/facebookresearch/Detic) to test them under this new benchmark. Thanks for their work.
+
+# 5 Citation
 If you find our paper or this code useful for your research, please considering cite us (●°u°●)」:
 ```
 @article{fu2024cross,
