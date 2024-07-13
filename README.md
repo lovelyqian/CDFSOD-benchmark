@@ -1,11 +1,11 @@
-# 1 Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector
+# Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector
 
 
 - [**News!**] 24-07-01: Our work is accepted by ECCV24. [Arxiv Paper](https://arxiv.org/pdf/2402.03094) can be found here. 
 
 - [**News!**] 24-07-12: We build our [Project Page](http://yuqianfu.com/CDFSOD-benchmark) which includes a brief summary of our work.
 
-- [**News!**] 24-07-13: We released the [Datasets]() and also [Codes](https://github.com/lovelyqian/CDFSOD-benchmark). Welcome to use this benchmark and also try our proposed method!
+- [**News!**] 24-07-13: We released the [Datasets](https://drive.google.com/drive/folders/16SDv_V7RDjTKDk8uodL2ubyubYTMdd5q?usp=drive_link) and also [Codes](https://github.com/lovelyqian/CDFSOD-benchmark). Welcome to use this benchmark and also try our proposed method!
 
 
 ![image](https://github.com/user-attachments/assets/532dc8db-47eb-4e84-be46-7a59f8ff0461)
@@ -21,7 +21,7 @@
 3) codes for the DE-ViT-FT method; (in case you would like to build new methods based on this baseline).
 
 
-# 2 Datasets
+# Datasets
 We take **COCO** as source training data and **ArTaxOr**, **Clipart1k**, **DIOR**, **DeepFish**, **NEU-DET**, and **UODD** as targets. 
 
 <img width="670" alt="image" src="https://github.com/user-attachments/assets/a56cb01e-fb06-4528-b63d-a373240572da">
@@ -30,12 +30,13 @@ Also, as stated in the paper, we adopt the "pretrain, finetuning, and testing" p
 
 The target datasets could be easily downloaded in the following links:  (If you use the datasets, please cite them properly, thanks.)
 
+- [Dataset Link from Google Drive](https://drive.google.com/drive/folders/16SDv_V7RDjTKDk8uodL2ubyubYTMdd5q?usp=drive_link)
 - [Dataset Link from 百度云盘](https://pan.baidu.com/s/1MpTwmJQF6GtmnxauVUPNAw?pwd=ni5j)
-- [Dataset Link from Google Drive （coming soon）]()
 
 
-# 3 Methods
-## 3.1 Setup
+
+# Methods
+## Setup
 An anaconda environment is suggested, take the name "cdfsod" as an example: 
 
 ```
@@ -47,7 +48,7 @@ pip install -e ./CDFSOD-benchmark
 cd CDFSOD-benchmark
 ```
 
-## 3.2 Run CD-ViTO
+## Run CD-ViTO
 1. download weights:
 download pretrained model from [DE-ViT](https://github.com/mlzxy/devit/blob/main/Downloads.md).
 
@@ -57,13 +58,13 @@ bash main_results.sh
 ```
 
 
-## 3.3 Run DE-ViT-FT
+## Run DE-ViT-FT
 
-# 4 Acknowledgement
+# Acknowledgement
 
 Our work is built upon [DE-ViT](https://github.com/mlzxy/devit), and also we use the codes of [ViTDeT](https://github.com/ViTAE-Transformer/ViTDet), [Detic](https://github.com/facebookresearch/Detic) to test them under this new benchmark. Thanks for their work.
 
-# 5 Citation
+# Citation
 If you find our paper or this code useful for your research, please considering cite us (●°u°●)」:
 ```
 @article{fu2024cross,
