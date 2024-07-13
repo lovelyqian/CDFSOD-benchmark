@@ -1,8 +1,31 @@
-# CDFSOD-benchmark
-A benchmark for cross-domain few-shot object detection (ECCV24 paper: Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector)
+# 1 Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector
 
-## Installation
-You can create an anaconda environment called `cdfsod` using
+
+- [**News!**] 24-07-01: Our work is accepted by ECCV24. [Arxiv Paper](https://arxiv.org/pdf/2402.03094) can be found here. 
+
+- [**News!**] 24-07-12: We build our [Project Page](http://yuqianfu.com/CDFSOD-benchmark) which includes a brief summary of our work.
+
+<img width="470" alt="image" src="http://yuqianfu.com/images/cdfsod-benchmark.jpg">
+
+**In this paper**, we: 
+1) reorganize a **benchmark** for Cross-Domain Few-Shot Object Detection (CD-FSOD);
+2) conduct **extensive study** on several different kinds of detectors (Tab.1 in the paper);
+3) propose a novel **CD-ViTO** method via enhancing the existing open-set detector (DE-ViT).
+
+**In this repo**, we provide: 
+1) links and splits for target datasets;
+2) codes for our CD-ViTO method;
+3) codes for the DE-ViT-FT method; (in case you would like to build new methods based on this baseline).
+
+
+# 2 Datasets
+datasets:
+https://pan.baidu.com/s/1MpTwmJQF6GtmnxauVUPNAw?pwd=ni5j 
+
+# 3 Methods
+## 3.1 Setup
+An anaconda environment is suggested, take the name of "cdfsod" as an example: 
+
 ```
 git clone git@github.com:lovelyqian/CDFSOD-benchmark.git
 conda create -n cdfsod python=3.9
@@ -12,8 +35,24 @@ pip install -e ./CDFSOD-benchmark
 cd CDFSOD-benchmark
 ```
 
+## 3.2 Run CD-ViTO
+
+
 weights:
 download weights from [devit](https://github.com/mlzxy/devit/blob/main/Downloads.md)
 
-datasets:
-https://pan.baidu.com/s/1MpTwmJQF6GtmnxauVUPNAw?pwd=ni5j 
+
+## 3.3 Run DE-ViT-FT
+
+# 4 Citiing
+If you find our paper or this code useful for your research, please considering cite us (●°u°●)」:
+```
+@article{fu2024cross,
+  title={Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector},
+  author={Fu, Yuqian and Wang, Yu and Pan, Yixuan and Huai, Lian and Qiu, Xingyu and Shangguan, Zeyu and Liu, Tong and Kong, Lingjie and Fu, Yanwei and Van Gool, Luc and others},
+  journal={arXiv preprint arXiv:2402.03094},
+  year={2024}
+}
+```
+
+
