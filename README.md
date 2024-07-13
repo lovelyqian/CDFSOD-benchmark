@@ -4,12 +4,12 @@ A benchmark for cross-domain few-shot object detection (ECCV24 paper: Cross-Doma
 ## Installation
 You can create an anaconda environment called `cdfsod` using
 ```
-git clone CDFSOD
+git clone git@github.com:lovelyqian/CDFSOD-benchmark.git
 conda create -n cdfsod python=3.9
 conda activate cdfsod
-pip install -r CDFSOD/requirements.txt 
-pip install -e ./CDFSOD
-cd CDFSOD
+pip install -r CDFSOD-benchmark/requirements.txt 
+pip install -e ./CDFSOD-benchmark
+cd CDFSOD-benchmark
 ```
 
 weights:
