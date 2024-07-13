@@ -49,7 +49,7 @@ cd CDFSOD-benchmark
 
 ## 3.2 Run CD-ViTO
 1. download weights:
-download pretrained model from [devit](https://github.com/mlzxy/devit/blob/main/Downloads.md)
+download pretrained model from [DE-ViT](https://github.com/mlzxy/devit/blob/main/Downloads.md).
 
 2. run script: 
 ```
