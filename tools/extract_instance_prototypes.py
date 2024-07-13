@@ -167,8 +167,7 @@ def main(model='vitl14', dataset='fs_coco17_support_novel_30shot', use_bbox='yes
     use_bbox = use_bbox == 'yes'
     dataset_name = dataset
     model_name = model
-    model = torch.hub.load('/home/wangyu/.cache/torch/hub/facebookresearch_dinov2_main', 'dinov2_'+model, source='local')
-    # model = torch.hub.load('facebookresearch/dinov2', 'dinov2_' + model)
+    model = torch.hub.load('facebookresearch/dinov2', 'dinov2_' + model)
     dataloader = get_dataloader(dataset_name, split=split, idx=idx)
 
     D = DatasetCatalog.get(dataset_name)
