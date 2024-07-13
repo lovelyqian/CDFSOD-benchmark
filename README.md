@@ -5,6 +5,8 @@
 
 - [**News!**] 24-07-12: We build our [Project Page](http://yuqianfu.com/CDFSOD-benchmark) which includes a brief summary of our work.
 
+- [**News!**] 24-07-13: We released the datasets and also codes. Welcome to use this benchmark and also try our proposed method!
+
 <img width="470" alt="image" src="http://yuqianfu.com/images/cdfsod-benchmark.jpg">
 
 **In this paper**, we: 
@@ -19,12 +21,20 @@
 
 
 # 2 Datasets
-datasets:
-https://pan.baidu.com/s/1MpTwmJQF6GtmnxauVUPNAw?pwd=ni5j 
+In this benchmark, we take COCO as source training data and use ArTaxOr, Clipart1k, DIOR, DeepFish, NEU-DET, and UODD as target datasets. 
+![image](https://github.com/user-attachments/assets/a56cb01e-fb06-4528-b63d-a373240572da)
+
+Also, in this paper, we adopt the "pretrain, finetuning, and testing" pipeline, while the pre-trained stage on COCO is directly taken from the [DE-ViT], thus in practice, only the targets are needed to run our experiments.  
+
+The target datasets could be easily downloaded in the following links:  (If you use the datasets, please cite the corresponding papers properly, thanks.)
+
+- [Dataset Link from 百度云盘](https://pan.baidu.com/s/1MpTwmJQF6GtmnxauVUPNAw?pwd=ni5j)
+- [Dataset Link from Google Drive （coming soon）]()
+
 
 # 3 Methods
 ## 3.1 Setup
-An anaconda environment is suggested, take the name of "cdfsod" as an example: 
+An anaconda environment is suggested, take the name "cdfsod" as an example: 
 
 ```
 git clone git@github.com:lovelyqian/CDFSOD-benchmark.git
