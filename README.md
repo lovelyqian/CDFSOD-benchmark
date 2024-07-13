@@ -13,7 +13,7 @@ cd CDFSOD-benchmark
 ```
 
 weights:
-download weights from [link](https://github.com/mlzxy/devit/blob/main/Downloads.md)
+download weights from [devit](https://github.com/mlzxy/devit/blob/main/Downloads.md)
 
 datasets:
 https://pan.baidu.com/s/1MpTwmJQF6GtmnxauVUPNAw?pwd=ni5j 
