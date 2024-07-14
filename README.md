@@ -59,6 +59,10 @@ bash main_results.sh
 
 
 ## Run DE-ViT-FT
+Add --controller to main_results.sh, then
+```
+bash main_results.sh
+```
 
 # Acknowledgement
 
