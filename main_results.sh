@@ -16,7 +16,6 @@ model_list=(
 #"b"
 #"s"
 )
-# --controller
 for model in "${model_list[@]}"; do
   for dataset in "${datalist[@]}"; do
     for shot in "${shot_list[@]}"; do
