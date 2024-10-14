@@ -58,28 +58,28 @@ _PREDEFINED_SPLITS_COCO["coco_ovd"] = {
     "coco_2017_ovd_b_test": ("coco/val2017", "coco/annotations/ovd_ins_val2017_b.json"),
     "coco_2017_ovd_t_test": ("coco/val2017", "coco/annotations/ovd_ins_val2017_t.json"),
 
-    
+
     "fs_coco17_base_train": ("coco/train2017", "coco/annotations/fs_coco17_base_train.json"),
-    "fs_coco17_base_val": ("coco/val2017", "coco/annotations/fs_coco17_base_val.json"),   
+    "fs_coco17_base_val": ("coco/val2017", "coco/annotations/fs_coco17_base_val.json"),
     # fs coco training datasets
     "fs_coco14_base_train": ("coco/train2014", "coco/annotations/fs_coco14_base_train.json"),
-    "fs_coco14_base_val": ("coco/val2014", "coco/annotations/fs_coco14_base_val.json"),   
+    "fs_coco14_base_val": ("coco/val2014", "coco/annotations/fs_coco14_base_val.json"),
 
-    "coco_2017_novel_oneshot_s1_r50": ("coco/train2017", "coco/annotations/coco_2017_novel_oneshot_s1_r50.json"),   
-    "coco_2017_novel_oneshot_s2_r50": ("coco/train2017", "coco/annotations/coco_2017_novel_oneshot_s2_r50.json"),   
-    "coco_2017_novel_oneshot_s3_r50": ("coco/train2017", "coco/annotations/coco_2017_novel_oneshot_s3_r50.json"),   
-    "coco_2017_novel_oneshot_s4_r50": ("coco/train2017", "coco/annotations/coco_2017_novel_oneshot_s4_r50.json"),   
+    "coco_2017_novel_oneshot_s1_r50": ("coco/train2017", "coco/annotations/coco_2017_novel_oneshot_s1_r50.json"),
+    "coco_2017_novel_oneshot_s2_r50": ("coco/train2017", "coco/annotations/coco_2017_novel_oneshot_s2_r50.json"),
+    "coco_2017_novel_oneshot_s3_r50": ("coco/train2017", "coco/annotations/coco_2017_novel_oneshot_s3_r50.json"),
+    "coco_2017_novel_oneshot_s4_r50": ("coco/train2017", "coco/annotations/coco_2017_novel_oneshot_s4_r50.json"),
 
-    
+
     "coco_2017_train_oneshot_s1": ("coco/train2017", "coco/annotations/coco_2017_train_oneshot_s1.json"),
     "coco_2017_train_oneshot_s2": ("coco/train2017", "coco/annotations/coco_2017_train_oneshot_s2.json"),
     "coco_2017_train_oneshot_s3": ("coco/train2017", "coco/annotations/coco_2017_train_oneshot_s3.json"),
     "coco_2017_train_oneshot_s4": ("coco/train2017", "coco/annotations/coco_2017_train_oneshot_s4.json"),
-    
+
     "coco_2017_val_oneshot_s1": ("coco/val2017", "coco/annotations/coco_2017_val_oneshot_s1.json"),
     "coco_2017_val_oneshot_s2": ("coco/val2017", "coco/annotations/coco_2017_val_oneshot_s2.json"),
     "coco_2017_val_oneshot_s3": ("coco/val2017", "coco/annotations/coco_2017_val_oneshot_s3.json"),
-    "coco_2017_val_oneshot_s4": ("coco/val2017", "coco/annotations/coco_2017_val_oneshot_s4.json"),   
+    "coco_2017_val_oneshot_s4": ("coco/val2017", "coco/annotations/coco_2017_val_oneshot_s4.json"),
 }
 
 
@@ -316,53 +316,15 @@ def register_all_ade20k(root):
             ignore_label=255,
         )
 
+# custom datasets
+datasets_name = ('ArTaxOr', 'clipart1k')#, 'DIOR', 'FISH', 'NEUDET', 'UODD')
 
-_PREDEFINED_CD = [
-    ("DIOR_train", "DIOR/train/new_train", "DIOR/annotations/train.json"),
-    ("DIOR_test", "DIOR/test/new_test", "DIOR/annotations/test.json"),
-    ("ArTaxOr_train", "ArTaxOr/train", "ArTaxOr/annotations/train.json"),
-    ("ArTaxOr_test", "ArTaxOr/test", "ArTaxOr/annotations/test.json"),
-    ("UODD_train", "UODD/train", "UODD/annotations/train.json"),
-    ("UODD_test", "UODD/test", "UODD/annotations/test.json"),
-    ("FISH_train", "FISH/train", "FISH/annotations/train.json"),
-    ("FISH_test", "FISH/test", "FISH/annotations/test.json"),
-    ("NEUDET_train", "NEU-DET/train", "NEU-DET/annotations/train.json"),
-    ("NEUDET_test", "NEU-DET/test", "NEU-DET/annotations/test.json"),
-    ("clipart1k_train", "clipart1k/train", "clipart1k/annotations/train.json"),
-    ("clipart1k_test", "clipart1k/test", "clipart1k/annotations/test.json")
-]
-
-for shot in [1, 5, 10]:
-    new_anns = ("DIOR_{}shot".format(shot),
-                "DIOR/train/new_train",
-                "DIOR/annotations/{}_shot.json".format(shot))
-    _PREDEFINED_CD.append(new_anns)
-
-    new_anns = ("ArTaxOr_{}shot".format(shot),
-                "ArTaxOr/train",
-                "ArTaxOr/annotations/{}_shot.json".format(shot))
-    _PREDEFINED_CD.append(new_anns)
-
-    new_anns = ("UODD_{}shot".format(shot),
-                "UODD/train",
-                "UODD/annotations/{}_shot.json".format(shot))
-    _PREDEFINED_CD.append(new_anns)
-
-    # newly added
-    new_anns = ("FISH_{}shot".format(shot),
-                "FISH/train",
-                "FISH/annotations/{}_shot.json".format(shot))
-    _PREDEFINED_CD.append(new_anns)
-
-    new_anns = ("NEUDET_{}shot".format(shot),
-                "NEU-DET/train",
-                "NEU-DET/annotations/{}_shot.json".format(shot))
-    _PREDEFINED_CD.append(new_anns)
-
-    new_anns = ("clipart1k_{}shot".format(shot),
-                "clipart1k/train",
-                "clipart1k/annotations/{}_shot.json".format(shot))
-    _PREDEFINED_CD.append(new_anns)
+_PREDEFINED_CD = []
+for dataset in datasets_name:
+    _PREDEFINED_CD.append((f'{dataset}_train', f'{dataset}/train',f'{dataset}/annotations/train.json'))
+    _PREDEFINED_CD.append((f'{dataset}_test', f'{dataset}/test',f'{dataset}/annotations/train.json'))
+    for shot in [1, 5, 10]:
+        _PREDEFINED_CD.append((f'{dataset}_{shot}shot',f'{dataset}/train',f'{dataset}/annotations/{shot}_shot.json'))
 
 def register_all_CD(root):
     for name, image_dir, json_file in _PREDEFINED_CD:
