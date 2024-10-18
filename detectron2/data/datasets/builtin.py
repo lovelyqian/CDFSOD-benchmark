@@ -322,7 +322,7 @@ datasets_name = ('ArTaxOr', 'clipart1k')#, 'DIOR', 'FISH', 'NEUDET', 'UODD')
 _PREDEFINED_CD = []
 for dataset in datasets_name:
     _PREDEFINED_CD.append((f'{dataset}_train', f'{dataset}/train',f'{dataset}/annotations/train.json'))
-    _PREDEFINED_CD.append((f'{dataset}_test', f'{dataset}/test',f'{dataset}/annotations/train.json'))
+    _PREDEFINED_CD.append((f'{dataset}_test', f'{dataset}/test',f'{dataset}/annotations/test.json'))
     for shot in [1, 5, 10]:
         _PREDEFINED_CD.append((f'{dataset}_{shot}shot',f'{dataset}/train',f'{dataset}/annotations/{shot}_shot.json'))
 
