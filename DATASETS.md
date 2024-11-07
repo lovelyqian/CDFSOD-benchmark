@@ -10,7 +10,7 @@ Before starting, ensure that your datasets are converted into the COCO format (J
 You can use custom scripts or available tools to convert datasets from various formats (Pascal VOC, YOLO, etc.) into the COCO format. Once the datasets are in COCO format, proceed to the next step.
 
 # 2. Split the Dataset into Training and Testing Sets
-After converting your dataset into COCO format, use the provided split.py script to split the dataset into training and testing sets. The script randomly divides the dataset into the specified proportions (e.g., 80% for training and 20% for testing).
+After converting your dataset into COCO format, use the provided [split.py](https://github.com/lovelyqian/CDFSOD-benchmark/blob/main/datasets/split.py) script to split the dataset into training and testing sets. The script randomly divides the dataset into the specified proportions (e.g., 80% for training and 20% for testing).
 
 Here’s how to use the split.py:
 ### 1.Place your COCO format dataset (JSON file) in the appropriate directory.
