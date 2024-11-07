@@ -39,7 +39,7 @@ The target datasets could be easily downloaded in the following links:  (If you 
 - [Dataset Link from Google Drive](https://drive.google.com/drive/folders/16SDv_V7RDjTKDk8uodL2ubyubYTMdd5q?usp=drive_link)
 - [Dataset Link from 百度云盘](https://pan.baidu.com/s/1MpTwmJQF6GtmnxauVUPNAw?pwd=ni5j)
 
-
+To train CD-ViTO on a custom dataset, please refer to [DATASETS.md](https://github.com/lovelyqian/CDFSOD-benchmark/blob/main/DATASETS.md) for detailed instructions.
 
 # Methods
 ## Setup
