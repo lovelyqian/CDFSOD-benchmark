@@ -34,6 +34,12 @@ To generate a k-shot dataset from the training set, follow these steps:
 
 Once this process is complete, the kshot_train.json will contain the selected k-shot data, which can be used for training k-shot models.
 
-# 4. Adding Custom Datasets
+# 4. Generate Prototypes
+Edit and run [build_prototypes.sh](https://github.com/lovelyqian/CDFSOD-benchmark/blob/main/build_prototypes.sh).
+```
+bash build_prototypes.sh
+```
+
+# 5. Adding Custom Datasets
 
 Before training, update these two files: [lib/categories.py](https://github.com/lovelyqian/CDFSOD-benchmark/blob/main/lib/categories.py#L73), [detectron2/data/datasets/build.py](https://github.com/lovelyqian/CDFSOD-benchmark/blob/main/detectron2/data/datasets/builtin.py#L320). Then adding your datasets name in 'datasets_name'.
