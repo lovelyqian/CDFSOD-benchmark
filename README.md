@@ -77,12 +77,31 @@ Our work is built upon [DE-ViT](https://github.com/mlzxy/devit), and also we use
 # Citation
 If you find our paper or this code useful for your research, please considering cite us (●°u°●)」:
 ```
-@article{fu2024cross,
-  title={Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector},
-  author={Fu, Yuqian and Wang, Yu and Pan, Yixuan and Huai, Lian and Qiu, Xingyu and Shangguan, Zeyu and Liu, Tong and Kong, Lingjie and Fu, Yanwei and Van Gool, Luc and others},
-  journal={arXiv preprint arXiv:2402.03094},
-  year={2024}
+@inproceedings{fu2025cross,
+  title={Cross-domain few-shot object detection via enhanced open-set object detector},
+  author={Fu, Yuqian and Wang, Yu and Pan, Yixuan and Huai, Lian and Qiu, Xingyu and Shangguan, Zeyu and Liu, Tong and Fu, Yanwei and Van Gool, Luc and Jiang, Xingqun},
+  booktitle={European Conference on Computer Vision},
+  pages={247--264},
+  year={2025},
+  organization={Springer}
 }
 ```
+
+(we also have several works on cross-domain few-shot learning, if you are generally interested in this topic, a citation is very appreciated) 
+@inproceedings{fu2023styleadv,
+  title={Styleadv: Meta style adversarial training for cross-domain few-shot learning},
+  author={Fu, Yuqian and Xie, Yu and Fu, Yanwei and Jiang, Yu-Gang},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={24575--24584},
+  year={2023}
+}
+
+@inproceedings{fu2021meta,
+  title={Meta-fdmixup: Cross-domain few-shot learning guided by labeled target data},
+  author={Fu, Yuqian and Fu, Yanwei and Jiang, Yu-Gang},
+  booktitle={Proceedings of the 29th ACM international conference on multimedia},
+  pages={5326--5334},
+  year={2021}
+}
 
 
