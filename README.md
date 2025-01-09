@@ -88,6 +88,8 @@ If you find our paper or this code useful for your research, please considering 
 ```
 
 (we also have several works on cross-domain few-shot learning, if you are generally interested in this topic, a citation is very appreciated) 
+
+```
 @inproceedings{fu2023styleadv,
   title={Styleadv: Meta style adversarial training for cross-domain few-shot learning},
   author={Fu, Yuqian and Xie, Yu and Fu, Yanwei and Jiang, Yu-Gang},
@@ -103,5 +105,6 @@ If you find our paper or this code useful for your research, please considering 
   pages={5326--5334},
   year={2021}
 }
+```
 
 
