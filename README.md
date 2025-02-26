@@ -1,5 +1,6 @@
 # Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector
-
+- [**News!**] 25-02-25: Based on this work, we are organzing the **[1st CD-FSOD Challenge](https://codalab.lisn.upsaclay.fr/competitions/21851 
+)** under [NTIRE Workshop @ CVPR 2025](https://www.cvlai.net/ntire/2025/).  Top participants could win awards and publish papers on **CVPR25 workshop**. 🏆 
 
 - [**News!**] 24-07-01: Our work is accepted by ECCV24. [Arxiv Paper](https://arxiv.org/pdf/2402.03094) can be found here. 🎉 
 
