@@ -58,8 +58,11 @@ cd CDFSOD-benchmark
 ## Run CD-ViTO
 1. download weights:
 download pretrained model from [DE-ViT](https://github.com/mlzxy/devit/blob/main/Downloads.md).
+
 and you could download pretrained model from Baidu Netdisk
+
 https://pan.baidu.com/s/1ucod5uGGvbZQEtC3PbgevA?pwd=nvtx 提取码: nvtx
+
 and you need to construct the weights like devit
 
 3. run script: 
