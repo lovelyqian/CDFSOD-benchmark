@@ -88,11 +88,26 @@ If you find our paper or this code useful for your research, please considering 
   year={2025},
   organization={Springer}
 }
+
+@inproceedings{fu2025ntire,
+  title={NTIRE 2025 challenge on cross-domain few-shot object detection: Methods and results},
+  author={Fu, Yuqian and Qiu, Xingyu and Ren, Bin and Fu, Yanwei and Timofte, Radu and Sebe, Nicu and Yang, Ming-Hsuan and Van Gool, Luc and Zhang, Kaijin and Nong, Qingpeng and others},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={1048--1069},
+  year={2025}
+}
 ```
 
 (we also have several works on cross-domain few-shot learning, if you are generally interested in this topic, a citation is very appreciated) 
 
 ```
+@article{li2025domain,
+  title={Domain-RAG: Retrieval-Guided Compositional Image Generation for Cross-Domain Few-Shot Object Detection},
+  author={Li, Yu and Qiu, Xingyu and Fu, Yuqian and Chen, Jie and Qian, Tianwen and Zheng, Xu and Paudel, Danda Pani and Fu, Yanwei and Huang, Xuanjing and Van Gool, Luc and others},
+  journal={arXiv preprint arXiv:2506.05872},
+  year={2025}
+}
+
 @inproceedings{fu2023styleadv,
   title={Styleadv: Meta style adversarial training for cross-domain few-shot learning},
   author={Fu, Yuqian and Xie, Yu and Fu, Yanwei and Jiang, Yu-Gang},
