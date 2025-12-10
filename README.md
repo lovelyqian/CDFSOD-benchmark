@@ -1,4 +1,7 @@
 # Cross-Domain Few-Shot Object Detection via Enhanced Open-Set Object Detector
+
+- 【**News**] 25-09-09: Our follow-up work **[Domain-RAG](https://github.com/LiYu0524/Domain-RAG)** is accepted by NeurIPS25, check the [paper](https://arxiv.org/abs/2506.05872) out!
+- 
 - [**News!**] 25-02-25: Based on this work, we are organzing the **[1st CD-FSOD Challenge](https://codalab.lisn.upsaclay.fr/competitions/21851 
 )** under [NTIRE Workshop @ CVPR 2025](https://www.cvlai.net/ntire/2025/).  Top participants could win awards and publish papers on **CVPR25 workshop**. 🏆 
 
